@@ -1,0 +1,250 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce PicPay\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-03 03:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
+
+#: includes/class-wc-picpay-gateway.php:25
+msgid "Accept payments using the PicPay."
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-ecfb.php:23
+msgid "Active Extra Checkout Fields for Brazil"
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-woocommerce.php:23
+msgid "Active WooCommerce"
+msgstr ""
+
+#: includes/class-wc-picpay-api.php:224
+msgid ""
+"An error has occurred while processing your payment, please try again. Or "
+"contact us for assistance."
+msgstr ""
+
+#: includes/views/html-receipt-page-error.php:16
+msgid "Click to try again"
+msgstr ""
+
+#: includes/admin/views/html-notice-currency-not-supported.php:14
+#, php-format
+msgid ""
+"Currency <code>%s</code> is not supported. Works only with Brazilian Real."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:139
+msgid "Debug Log"
+msgstr ""
+
+#. Author of the plugin
+msgid "Deividson Damasio"
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-ecfb.php:20
+msgid ""
+"depends on the last version of Extra Checkout Fields for Brazil to work!"
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-woocommerce.php:20
+msgid "depends on the last version of WooCommerce to work!"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:120
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:141
+msgid "Enable logging"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:109
+msgid "Enable PicPay"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:107
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/admin/views/html-admin-help-message.php:14
+#, php-format
+msgid ""
+"Help us keep the %s plugin free making a donation or rate %s on WordPress."
+"org. Thank you in advance!"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:129
+msgid "here"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://deividson.net"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/dadeke/woo-picpay"
+msgstr ""
+
+#. Description of the plugin
+msgid "Includes PicPay E-Commerce as a payment gateway to WooCommerce."
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-ecfb.php:31
+msgid "Install Extra Checkout Fields for Brazil"
+msgstr ""
+
+#: includes/admin/views/html-notice-missing-woocommerce.php:31
+msgid "Install WooCommerce"
+msgstr ""
+
+#. %s: log page link
+#: includes/class-wc-picpay-gateway.php:144
+#, php-format
+msgid "Log PicPay events, such as API requests, inside %s"
+msgstr ""
+
+#: includes/admin/views/html-admin-help-message.php:15
+msgid "Make a donation"
+msgstr ""
+
+#: includes/admin/views/html-admin-help-message.php:15
+msgid "Make a review"
+msgstr ""
+
+#. %s: order number
+#: includes/class-wc-picpay-gateway.php:324
+#, php-format
+msgid "Order %s has been marked as refunded by PicPay."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:123
+msgid "Pay via PicPay"
+msgstr ""
+
+#. %s: order number
+#: includes/class-wc-picpay-gateway.php:321
+#, php-format
+msgid "Payment for order %s refunded"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:322
+msgid "Payment refunded"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:243
+msgid "Payment refunded directly by PicPay."
+msgstr ""
+
+#: includes/class-wc-picpay-api.php:224 includes/class-wc-picpay-gateway.php:24
+#: includes/class-wc-picpay-gateway.php:117
+msgid "PicPay"
+msgstr ""
+
+#: includes/admin/views/html-notice-currency-not-supported.php:14
+#: includes/admin/views/html-notice-token-missing.php:14
+msgid "PicPay Disabled"
+msgstr ""
+
+#: includes/views/html-receipt-page-error.php:13
+msgid "PicPay Payment URL not found."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:126
+msgid "PicPay Token"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:303
+msgid "PicPay: Payment approved."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:329
+msgid "PicPay: Payment chargeback."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:307
+msgid "PicPay: Payment completed and credited to your account."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:291
+msgid "PicPay: Payment expired."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:312
+#: includes/class-wc-picpay-gateway.php:316
+msgid "PicPay: Payment refunded."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:295
+msgid "PicPay: Payment under review."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:194
+msgid ""
+"PicPay: The buyer initiated the transaction, but so far the PicPay not "
+"received any payment information."
+msgstr ""
+
+#. %s: link to PicPay settings
+#: includes/class-wc-picpay-gateway.php:129
+#, php-format
+msgid ""
+"Please enter your PicPay token. This is needed to process the payments and "
+"notifications. Is possible generate a new token %s."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:135
+msgid "Please enter your Seller token."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:26
+msgid "Proceed to payment"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:133
+msgid "Seller Token"
+msgstr ""
+
+#: includes/class-wc-picpay.php:52
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:95
+msgid "System Status &gt; Logs"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:122
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:115
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:113
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-picpay-api.php:197
+msgid "Too bad! The token from the PicPay are invalids my little friend!"
+msgstr ""
+
+#. Name of the plugin
+#: includes/admin/views/html-admin-help-message.php:14
+#: includes/admin/views/html-notice-missing-ecfb.php:20
+#: includes/admin/views/html-notice-missing-woocommerce.php:20
+msgid "WooCommerce PicPay"
+msgstr ""
+
+#: includes/admin/views/html-notice-token-missing.php:14
+msgid "You should inform your PicPay token and Seller Token."
+msgstr ""
