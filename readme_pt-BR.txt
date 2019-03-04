@@ -1,16 +1,16 @@
-# WooCommerce PicPay #
-**Contributors:** dadeke  
-**Donate link:** https://app.picpay.com/user/deividsondamasio  
-**Tags:** woocommerce, picpay, payment  
-**Requires at least:** 4.9  
-**Tested up to:** 5.1.0  
-**Stable tag:** 1.0.0  
-**License:** GPLv3 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
+=== WooCommerce PicPay ===
+Contributors: dadeke
+Donate link: https://app.picpay.com/user/deividsondamasio
+Tags: woocommerce, picpay, payment
+Requires at least: 4.9
+Tested up to: 5.1.0
+Stable tag: 1.0.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Adicione o PicPay E-Commerce como método de pagamento em sua loja WooCommerce.
 
-## Descrição ##
+== Descrição ==
 
 ### Adiciona o gateway PicPay E-Commerce ao WooCommerce ###
 
@@ -26,48 +26,48 @@ O plugin WooCommerce PicPay foi desenvolvido sem nenhum incentivo da PicPay Serv
 
 Este software é gratuito e não está associado ao PicPay. PicPay é uma marca registrada da PicPay Serviços S.A. Este plugin não está afiliado a PicPay Serviços S.A e, portanto, não é um produto oficial da PicPay.
 
-### Contribuição ###
+= Contribuição =
 
 Você pode contribuir para o código fonte no [GitHub](https://github.com/dadeke/woo-picpay).
 
-### Compatibilidade ###
+= Compatibilidade =
 
 Compatível com versões posteriores ao WooCommerce 3.0.
 
 O uso do plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) é obrigatório, pois desta forma é possível enviar os campos de "CPF" ou "CNPJ" para processar o pagamento.
 
-## FAQ ##
+== FAQ ==
 
-### Qual é a licença do plugin? ###
+= Qual é a licença do plugin? =
 
 Este plugin está licenciado como GPL.
 
-### O que eu preciso para utilizar este plugin? ###
+= O que eu preciso para utilizar este plugin? =
 
 * Ter instalado o plugin WooCommerce 3.0 ou mais recente.
 * Possuir uma conta no [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
 * Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/dashboard/login "Painel do PicPay").
 * Ter o plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e configurado.
 
-### PicPay recebe pagamentos de quais países? ###
+= PicPay recebe pagamentos de quais países? =
 
 No momento o PicPay recebe pagamentos apenas do Brasil.
 
 O plugin foi configurado para receber pagamentos apenas de usuários que selecionarem o Brasil nas informações de pagamento durante o checkout.
 
-## Screenshots ##
+== Screenshots ==
 
 1. Configurações do plugin.
 2. Método de pagamento na página de finalizar o pedido.
 3. Exemplo da página de pagamento do PicPay.
 
-## Changelog ##
+== Changelog ==
 
-### 1.0.0 - 03/03/2019 ###
+= 1.0.0 - 03/03/2019 =
 
 * Publicado a primeira versão.
 
-## Upgrade Notice ##
+== Upgrade Notice ==
 
 Sem atualizações até o momento.
 
