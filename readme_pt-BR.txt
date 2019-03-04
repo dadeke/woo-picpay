@@ -14,13 +14,13 @@ Adicione o PicPay E-Commerce como método de pagamento em sua loja WooCommerce.
 
 ### Adiciona o gateway PicPay E-Commerce ao WooCommerce ###
 
-Adicione o PicPay E-Commerce como método de pagamento em sua loja WooCommerce.
+Este plugin adiciona o gateway PicPay E-Commerce ao WooCommerce.
 
 Note que o WooCommerce deve estar instalado e ativo.
 
 [PicPay E-Commerce](https://ecommerce.picpay.com/) é um método de pagamento brasileiro desenvolvido pela PicPay Serviços S.A.
 
-Este plugin foi desenvolvido a partir da documentação oficial do PicPay E-Commerce(https://ecommerce.picpay.com/doc/) e utiliza a última versão da API de pagamentos.
+Este plugin foi desenvolvido a partir da [documentação oficial do PicPay E-Commerce](https://ecommerce.picpay.com/doc/) e utiliza a versão mais recente da API de pagamentos.
 
 O plugin WooCommerce PicPay foi desenvolvido sem nenhum incentivo da PicPay Serviços S.A. Nenhum dos desenvolvedores deste plugin possuem vínculos com a empresa.
 

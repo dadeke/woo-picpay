@@ -20,7 +20,7 @@ Please notice that WooCommerce must be installed and active.
 
 [PicPay E-Commerce](https://ecommerce.picpay.com/) is a brazilian payment method developed by PicPay Serviços S.A.
 
-This plugin was developed with the official PicPay E-Commerce documentation (https://ecommerce.picpay.com/doc/) and uses the latest version of the payment API.
+This plugin was developed with [the official PicPay E-Commerce documentation](https://ecommerce.picpay.com/doc/) and uses the latest version of the payment API.
 
 The PicPay WooCommerce plugin was developed without any incentive from PicPay Serviços S.A.
 None of the plugin developers have links to the company.
@@ -35,7 +35,7 @@ You can contribute to the source code in our [GitHub](https://github.com/dadeke/
 
 Compatible with later versions of WooCommerce 3.0.
 
-The use of the plugin [WooCommerce Extra Checkout Fields for Brazil] (http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) is mandatory, because in this way it is possible to send the fields of "CPF" or "CNPJ" to process the payment.
+The use of the plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) is mandatory, because in this way it is possible to send the fields of "CPF" or "CNPJ" to process the payment.
 
 == Frequently Asked Questions ==
 
@@ -46,9 +46,9 @@ The use of the plugin [WooCommerce Extra Checkout Fields for Brazil] (http://wor
 = What is needed to use this plugin? =
 
 * WooCommerce version 3.0 or latter installed and active.
-* Own an account at [PicPay E-commerce] (https://ecommerce.picpay.com/ "PicPay E-commerce").
-* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard] (https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
-* Have the plugin [WooCommerce Extra Checkout Fields for Brazil] (http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
+* Own an account at [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
+* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard](https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
+* Have the plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
 
 = PicPay receives payments from which countries? =
 

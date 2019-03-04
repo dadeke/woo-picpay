@@ -46,9 +46,9 @@ The use of the plugin [WooCommerce Extra Checkout Fields for Brazil](http://word
 ### What is needed to use this plugin? ###
 
 * WooCommerce version 3.0 or latter installed and active.
-* Own an account at [PicPay E-commerce] (https://ecommerce.picpay.com/ "PicPay E-commerce").
-* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard] (https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
-* Have the plugin [WooCommerce Extra Checkout Fields for Brazil] (http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
+* Own an account at [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
+* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard](https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
+* Have the plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
 
 ### PicPay receives payments from which countries? ###
 
