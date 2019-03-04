@@ -58,9 +58,14 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Screenshots ##
 
-1. Plugin settings.
-2. Payment method on the order completion page.
-3. Example of the PicPay payment page.
+### 1. Plugin settings. ###
+![1. Plugin settings.](http://ps.w.org/woo-picpay/assets/screenshot-1.png)
+
+### 2. Payment method on the order completion page. ###
+![2. Payment method on the order completion page.](http://ps.w.org/woo-picpay/assets/screenshot-2.png)
+
+### 3. Example of the PicPay payment page. ###
+![3. Example of the PicPay payment page.](http://ps.w.org/woo-picpay/assets/screenshot-3.png)
 
 ## Changelog ##
 

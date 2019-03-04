@@ -57,9 +57,14 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Screenshots ##
 
-1. Configurações do plugin.
-2. Método de pagamento na página de finalizar o pedido.
-3. Exemplo da página de pagamento do PicPay.
+### 1. Configurações do plugin. ###
+![1. Configurações do plugin.](http://ps.w.org/woo-picpay/assets/screenshot-1.png)
+
+### 2. Método de pagamento na página de finalizar o pedido. ###
+![2. Método de pagamento na página de finalizar o pedido.](http://ps.w.org/woo-picpay/assets/screenshot-2.png)
+
+### 3. Exemplo da página de pagamento do PicPay. ###
+![3. Exemplo da página de pagamento do PicPay.](http://ps.w.org/woo-picpay/assets/screenshot-3.png)
 
 ## Changelog ##
 
