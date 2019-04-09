@@ -3,7 +3,7 @@
  * WooCommerce PicPay Gateway class
  *
  * @package Woo_PicPay/Classes/Gateway
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 if(!defined('ABSPATH')) {
@@ -237,10 +237,15 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$payment = $this->api->process_callback();
 		if(is_array($payment)) {
 			$order = wc_get_order($payment['referenceId']);
-			$cancellation_id = $order->get_meta('cancellationId');
+			$cancellation_id = $order->get_meta('PicPay_cancellationId');
+			
+			// Remove in future releases.
+			if(empty($cancellation_id)) {
+				$cancellation_id = $order->get_meta('cancellationId');
+			}
 			
 			if(($payment['status'] == 'refunded') && empty($cancellation_id)) {
-				$payment['cancellationId'] = __('Payment refunded directly by PicPay.', 'woo-picpay');
+				$payment['PicPay_cancellationId'] = __('Payment refunded directly by PicPay.', 'woo-picpay');
 			}
 			
 			$this->update_order_status($payment);
@@ -257,7 +262,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	protected function save_payment_meta_data($order, $payment) {
 		foreach($payment as $key => $value) {
 			if(($key != 'referenceId') && ($key != 'status')) {
-				$order->add_meta_data($key, $value);
+				$order->add_meta_data('PicPay_' . $key, $value);
 			}
 		}
 		$order->save();
@@ -342,7 +347,12 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	public function cancel_payment($order_id) {
 		$order = wc_get_order($order_id);
 		
-		$cancellation_id = $order->get_meta('cancellationId');
+		$cancellation_id = $order->get_meta('PicPay_cancellationId');
+		
+		// Remove in future releases.
+		if(empty($cancellation_id)) {
+			$cancellation_id = $order->get_meta('cancellationId');
+		}
 		
 		if(empty($cancellation_id)) { // Prevents repeat refunded.
 			$payment = $this->api->do_payment_cancel($order);

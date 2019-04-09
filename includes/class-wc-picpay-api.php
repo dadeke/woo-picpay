@@ -3,7 +3,7 @@
  * WooCommerce PicPay API class
  *
  * @package Woo_PicPay/Classes/API
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 if(!defined('ABSPATH')) {
@@ -304,7 +304,12 @@ class WC_PicPay_API {
 	public function do_payment_cancel($order) {
 		$json = '';
 		$order_id = method_exists($order, 'get_id') ? $order->get_id() : $order->id;
-		$authorization_id = $order->get_meta('authorizationId');
+		$authorization_id = $order->get_meta('PicPay_authorizationId');
+		
+		// Remove in future releases.
+		if(empty($authorization_id)) {
+			$authorization_id = $order->get_meta('authorizationId');
+		}
 		
 		if(!empty($authorization_id)) {
 			$json = json_encode(array('authorizationId' => $authorization_id));

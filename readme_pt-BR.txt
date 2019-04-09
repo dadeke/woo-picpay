@@ -4,7 +4,7 @@ Donate link: https://app.picpay.com/user/deividsondamasio
 Tags: woocommerce, picpay, payment
 Requires at least: 4.9
 Tested up to: 5.1.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -62,6 +62,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 3. Exemplo da página de pagamento do PicPay.
 
 == Changelog ==
+
+= 1.1.0 - 09/04/2019 =
+
+* Adicionado o prefixo "PicPay_" em todos os metadados que são salvos no pedido.
 
 = 1.0.0 - 03/03/2019 =
 

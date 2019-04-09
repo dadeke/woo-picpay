@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.1.1  
-**Stable tag:** 1.0.0  
+**Stable tag:** 1.1.0  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -68,6 +68,10 @@ The plugin has been configured to receive payments only from users who select Br
 ![3. Example of the PicPay payment page.](http://ps.w.org/woo-picpay/assets/screenshot-3.png)
 
 ## Changelog ##
+
+### 1.1.0 - 2019/04/09 ###
+
+* Added the prefix "PicPay_" in all metadata that is saved in the order.
 
 ### 1.0.0 - 2019/03/03 ###
 
