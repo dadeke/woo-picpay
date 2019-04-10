@@ -3,7 +3,7 @@
  * WooCommerce PicPay Gateway class
  *
  * @package Woo_PicPay/Classes/Gateway
- * @version 1.1.0
+ * @version 1.1.1
  */
 
 if(!defined('ABSPATH')) {
@@ -182,7 +182,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			$response = $this->api->do_checkout_request($order);
 			
 			if($response['url']) {
-				$order->add_meta_data('PicPay_PaymentURL', $response['url']);
+				$order->add_meta_data('PicPay_PaymentURL', $response['url'], true);
 				$order->save();
 			}
 		}
@@ -262,7 +262,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	protected function save_payment_meta_data($order, $payment) {
 		foreach($payment as $key => $value) {
 			if(($key != 'referenceId') && ($key != 'status')) {
-				$order->add_meta_data('PicPay_' . $key, $value);
+				$order->add_meta_data('PicPay_' . $key, $value, true);
 			}
 		}
 		$order->save();
