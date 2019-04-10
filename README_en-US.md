@@ -79,6 +79,8 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Upgrade Notice ##
 
-No updates so far.
+### 1.1.0 ###
+
+* Saves the metadata with a prefix that identifies the PicPay data.
 
 "For God so loved the world, that he gave his only begotten Son, that whosoever believeth on him should not perish, but have eternal life." John 3:16

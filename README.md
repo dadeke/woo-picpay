@@ -76,8 +76,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 * Publicado a primeira versão.
 
-## Upgrade Notice ##
+## Aviso de atualização ##
 
-Sem atualizações até o momento.
+= 1.1.0 =
+
+* Salva os metadados com um prefixo que identifica os dados do PicPay.
 
 "Porque Deus tanto amou o mundo que deu o seu Filho Unigênito, para que todo o que nele crer não pereça, mas tenha a vida eterna." João 3:16
