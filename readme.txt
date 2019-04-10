@@ -4,7 +4,7 @@ Donate link: https://app.picpay.com/user/deividsondamasio
 Tags: woocommerce, picpay, payment
 Requires at least: 4.9
 Tested up to: 5.1.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -64,6 +64,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Changelog ==
 
+= 1.1.1 - 10/04/2019 =
+
+* Changed to save the metadata in the order as the unique key.
+
 = 1.1.0 - 2019/04/09 =
 
 * Added the prefix "PicPay_" in all metadata that is saved in the order.
@@ -73,6 +77,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+
+* Save the PicPay metadata as a unique key.
 
 = 1.1.0 =
 

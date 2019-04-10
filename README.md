@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.1.1  
-**Stable tag:** 1.1.0  
+**Stable tag:** 1.1.1  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -68,6 +68,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Changelog ##
 
+### 1.1.1 - 10/04/2019 ###
+
+* Alterado para salvar como chave única os metadados no pedido.
+
 ### 1.1.0 - 09/04/2019 ###
 
 * Adicionado o prefixo "PicPay_" em todos os metadados que são salvos no pedido.
@@ -78,7 +82,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Aviso de atualização ##
 
-= 1.1.0 =
+### 1.1.1 ###
+
+* Salva os metadados do PicPay como chave única.
+
+### 1.1.0 ###
 
 * Salva os metadados com um prefixo que identifica os dados do PicPay.
 
