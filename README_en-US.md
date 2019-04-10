@@ -69,7 +69,7 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Changelog ##
 
-### 1.1.1 - 10/04/2019 ###
+### 1.1.1 - 2019/04/10 ###
 
 * Changed to save the metadata in the order as the unique key.
 
