@@ -26,6 +26,10 @@ O plugin WooCommerce PicPay foi desenvolvido sem nenhum incentivo da PicPay Serv
 
 Este software é gratuito e não está associado ao PicPay. PicPay é uma marca registrada da PicPay Serviços S.A. Este plugin não está afiliado a PicPay Serviços S.A e, portanto, não é um produto oficial da PicPay.
 
+### Como testar ###
+
+Na API do PicPay não há um ambiente de homologação, então os testes devem ser feitos em ambiente de produção e estornados pelo painel do lojista ou pela propria api.
+
 ### Contribuição ###
 
 Você pode contribuir para o código fonte no [GitHub](https://github.com/dadeke/woo-picpay).
