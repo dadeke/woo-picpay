@@ -27,6 +27,12 @@ None of the plugin developers have links to the company.
 
 This software is free and is not associated with PicPay. PicPay is a registered trademark of PicPay Serviços S.A. This plugin is not affiliated with PicPay Serviços S.A and therefore is not an official PicPay product.
 
+### How to test ###
+
+The PicPay API does not have an production environment. All sales testing should be done using the production environment.
+The values can be refund by the [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) or by WooCommerce changing the order Status to "Canceled".
+After the order Status is changed to "Canceled" in WooCommerce, automatically (after a few seconds) the plugin should change the order Status to "Refunded".
+
 ### Contribute ###
 
 You can contribute to the source code in our [GitHub](https://github.com/dadeke/woo-picpay) page.

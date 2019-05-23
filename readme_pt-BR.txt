@@ -26,6 +26,12 @@ O plugin WooCommerce PicPay foi desenvolvido sem nenhum incentivo da PicPay Serv
 
 Este software é gratuito e não está associado ao PicPay. PicPay é uma marca registrada da PicPay Serviços S.A. Este plugin não está afiliado a PicPay Serviços S.A e, portanto, não é um produto oficial da PicPay.
 
+= Como testar =
+
+A API do PicPay não possui um ambiente de homologação. Então todos os testes de vendas devem ser feitos usando o ambiente de produção.
+Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
+Depois que o Status do pedido for alterado para "Cancelado" no WooCommerce, automaticamente (depois de alguns segundos) o plugin deverá alterar o Status do pedido para "Reembolsado".
+
 = Contribuição =
 
 Você pode contribuir para o código fonte no [GitHub](https://github.com/dadeke/woo-picpay).

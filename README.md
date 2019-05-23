@@ -28,7 +28,9 @@ Este software é gratuito e não está associado ao PicPay. PicPay é uma marca 
 
 ### Como testar ###
 
-Na API do PicPay não há um ambiente de homologação, então os testes devem ser feitos em ambiente de produção e estornados pelo painel do lojista ou pela propria api.
+A API do PicPay não possui um ambiente de homologação. Então todos os testes de vendas devem ser feitos usando o ambiente de produção.
+Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
+Depois que o Status do pedido for alterado para "Cancelado" no WooCommerce, automaticamente (depois de alguns segundos) o plugin deverá alterar o Status do pedido para "Reembolsado".
 
 ### Contribuição ###
 
