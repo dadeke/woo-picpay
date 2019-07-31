@@ -3,7 +3,7 @@
  * WooCommerce PicPay API class
  *
  * @package Woo_PicPay/Classes/API
- * @version 1.1.1
+ * @version 1.1.2
  */
 
 if(!defined('ABSPATH')) {

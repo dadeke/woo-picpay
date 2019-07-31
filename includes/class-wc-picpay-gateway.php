@@ -3,7 +3,7 @@
  * WooCommerce PicPay Gateway class
  *
  * @package Woo_PicPay/Classes/Gateway
- * @version 1.1.1
+ * @version 1.1.2
  */
 
 if(!defined('ABSPATH')) {
