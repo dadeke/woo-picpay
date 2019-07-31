@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.2  
-**Stable tag:** 1.1.1  
+**Stable tag:** 1.1.2  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -75,6 +75,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Changelog ##
 
+# 1.1.2 - 2019/07/30 #
+
+* Fixed order cancellation bug.
+
 ### 1.1.1 - 2019/04/10 ###
 
 * Changed to save the metadata in the order as the unique key.
@@ -88,6 +92,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 ## Upgrade Notice ##
+
+# 1.1.2 #
+
+* Fix bug.
 
 ### 1.1.1 ###
 
