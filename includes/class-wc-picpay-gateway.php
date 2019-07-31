@@ -245,7 +245,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			}
 			
 			if(($payment['status'] == 'refunded') && empty($cancellation_id)) {
-				$payment['PicPay_cancellationId'] = __('Payment refunded directly by PicPay.', 'woo-picpay');
+				$payment['cancellationId'] = __('Payment refunded directly by PicPay.', 'woo-picpay');
 			}
 			
 			$this->update_order_status($payment);
