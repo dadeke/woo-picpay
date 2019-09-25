@@ -1,6 +1,6 @@
 <?php
 /**
- * WooCommerce PicPay main class
+ * Plugin's main class
  *
  * @package Woo_PicPay
  */
@@ -92,7 +92,7 @@ class WC_PicPay {
 	}
 	
 	/**
-	 * WooCommerce Extra Checkout Fields for Brazil notice.
+	 * Brazilian Market on WooCommerce notice.
 	 */
 	public static function ecfb_missing_notice() {
 		if(!class_exists('Extra_Checkout_Fields_For_Brazil')) {

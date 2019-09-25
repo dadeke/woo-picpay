@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce PicPay\n"
+"Project-Id-Version: QR Code PicPay for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-03 03:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -20,7 +20,7 @@ msgid "Accept payments using the PicPay."
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-ecfb.php:23
-msgid "Active Extra Checkout Fields for Brazil"
+msgid "Active Brazilian Market on WooCommerce"
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-woocommerce.php:23
@@ -53,7 +53,7 @@ msgstr ""
 
 #: includes/admin/views/html-notice-missing-ecfb.php:20
 msgid ""
-"depends on the last version of Extra Checkout Fields for Brazil to work!"
+"depends on the last version of Brazilian Market on WooCommerce to work!"
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-woocommerce.php:20
@@ -100,7 +100,7 @@ msgid "Includes PicPay E-Commerce as a payment gateway to WooCommerce."
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-ecfb.php:31
-msgid "Install Extra Checkout Fields for Brazil"
+msgid "Install Brazilian Market on WooCommerce"
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-woocommerce.php:31
@@ -242,7 +242,7 @@ msgstr ""
 #: includes/admin/views/html-admin-help-message.php:14
 #: includes/admin/views/html-notice-missing-ecfb.php:20
 #: includes/admin/views/html-notice-missing-woocommerce.php:20
-msgid "WooCommerce PicPay"
+msgid "QR Code PicPay for WooCommerce"
 msgstr ""
 
 #: includes/admin/views/html-notice-token-missing.php:14

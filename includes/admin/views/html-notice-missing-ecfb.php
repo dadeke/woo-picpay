@@ -1,6 +1,6 @@
 <?php
 /**
- * Missing WooCommerce Extra Checkout Fields for Brazil notice
+ * Missing Brazilian Market on WooCommerce notice
  *
  * @package Woo_PicPay/Admin/Notices
  */
@@ -17,10 +17,10 @@ if(function_exists('get_plugins')) {
 }
 ?>
 <div class="error">
-	<p><strong><?php esc_html_e('WooCommerce PicPay', 'woo-picpay'); ?></strong> <?php esc_html_e('depends on the last version of Extra Checkout Fields for Brazil to work!', 'woo-picpay'); ?></p>
+	<p><strong><?php esc_html_e('QR Code PicPay for WooCommerce', 'woo-picpay'); ?></strong> <?php esc_html_e('depends on the last version of Brazilian Market on WooCommerce to work!', 'woo-picpay'); ?></p>
 
 <?php if($is_installed && current_user_can('install_plugins')) : ?>
-		<p><a href="<?php echo esc_url(wp_nonce_url(self_admin_url('plugins.php?action=activate&plugin=woocommerce-extra-checkout-fields-for-brazil/woocommerce-extra-checkout-fields-for-brazil.php&plugin_status=active'), 'activate-plugin_woocommerce-extra-checkout-fields-for-brazil/woocommerce-extra-checkout-fields-for-brazil.php')); ?>" class="button button-primary"><?php esc_html_e('Active Extra Checkout Fields for Brazil', 'woo-picpay'); ?></a></p>
+		<p><a href="<?php echo esc_url(wp_nonce_url(self_admin_url('plugins.php?action=activate&plugin=woocommerce-extra-checkout-fields-for-brazil/woocommerce-extra-checkout-fields-for-brazil.php&plugin_status=active'), 'activate-plugin_woocommerce-extra-checkout-fields-for-brazil/woocommerce-extra-checkout-fields-for-brazil.php')); ?>" class="button button-primary"><?php esc_html_e('Active Brazilian Market on WooCommerce', 'woo-picpay'); ?></a></p>
 <?php else :
 		if(current_user_can('install_plugins')) {
 			$url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=woocommerce-extra-checkout-fields-for-brazil'), 'install-plugin_woocommerce-extra-checkout-fields-for-brazil');
@@ -28,6 +28,6 @@ if(function_exists('get_plugins')) {
 			$url = 'http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/';
 		}
 ?>
-		<p><a href="<?php echo esc_url($url); ?>" class="button button-primary"><?php esc_html_e('Install Extra Checkout Fields for Brazil', 'woo-picpay'); ?></a></p>
+		<p><a href="<?php echo esc_url($url); ?>" class="button button-primary"><?php esc_html_e('Install Brazilian Market on WooCommerce', 'woo-picpay'); ?></a></p>
 	<?php endif; ?>
 </div>

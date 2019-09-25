@@ -1,10 +1,10 @@
-=== WooCommerce PicPay ===
+=== QR Code PicPay para WooCommerce ===
 Contributors: dadeke
 Donate link: https://app.picpay.com/user/deividsondamasio
 Tags: woocommerce, picpay, payment
 Requires at least: 4.9
 Tested up to: 5.2
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -22,7 +22,7 @@ Note que o WooCommerce deve estar instalado e ativo.
 
 Este plugin foi desenvolvido a partir da [documentação oficial do PicPay E-Commerce](https://ecommerce.picpay.com/doc/) e utiliza a versão mais recente da API de pagamentos.
 
-O plugin WooCommerce PicPay foi desenvolvido sem nenhum incentivo da PicPay Serviços S.A. Nenhum dos desenvolvedores deste plugin possuem vínculos com a empresa.
+Este plugin foi desenvolvido sem nenhum incentivo da PicPay Serviços S.A. Nenhum dos desenvolvedores deste plugin possuem vínculos com a empresa.
 
 Este software é gratuito e não está associado ao PicPay. PicPay é uma marca registrada da PicPay Serviços S.A. Este plugin não está afiliado a PicPay Serviços S.A e, portanto, não é um produto oficial da PicPay.
 
@@ -38,9 +38,9 @@ Você pode contribuir para o código fonte no [GitHub](https://github.com/dadeke
 
 = Compatibilidade =
 
-Compatível com versões posteriores ao WooCommerce 3.0.
+Compatível com versões atuais do WooCommerce.
 
-O uso do plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) é obrigatório, pois desta forma é possível enviar os campos de "CPF" ou "CNPJ" para processar o pagamento.
+O uso do plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) é obrigatório, pois desta forma é possível enviar os campos de "CPF" ou "CNPJ" para processar o pagamento.
 
 == FAQ ==
 
@@ -50,10 +50,10 @@ Este plugin está licenciado como GPL.
 
 = O que eu preciso para utilizar este plugin? =
 
-* Ter instalado o plugin WooCommerce 3.0 ou mais recente.
+* Ter instalado o plugin WooCommerce mais recente.
 * Possuir uma conta no [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
 * Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/dashboard/login "Painel do PicPay").
-* Ter o plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e configurado.
+* Ter o plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e configurado.
 
 = PicPay recebe pagamentos de quais países? =
 
@@ -68,6 +68,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 3. Exemplo da página de pagamento do PicPay.
 
 == Changelog ==
+
+= 1.1.3 - 24/09/2019 =
+
+* Atualizado o nome do plugin de "WooCommerce PicPay" para "QR Code PicPay para WooCommerce".
 
 = 1.1.2 - 30/07/2019 =
 
@@ -86,6 +90,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 * Publicado a primeira versão.
 
 == Aviso de atualização  ==
+
+= 1.1.3 =
+
+* Atualizado o nome do plugin de "WooCommerce PicPay" para "QR Code PicPay para WooCommerce".
 
 = 1.1.2 =
 

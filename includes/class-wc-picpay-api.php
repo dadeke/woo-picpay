@@ -1,9 +1,9 @@
 <?php
 /**
- * WooCommerce PicPay API class
+ * API class
  *
  * @package Woo_PicPay/Classes/API
- * @version 1.1.2
+ * @version 1.1.3
  */
 
 if(!defined('ABSPATH')) {
@@ -11,7 +11,7 @@ if(!defined('ABSPATH')) {
 }
 
 /**
- * WooCommerce PicPay API.
+ * API.
  */
 class WC_PicPay_API {
 

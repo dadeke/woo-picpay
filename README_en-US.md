@@ -1,10 +1,10 @@
-# WooCommerce PicPay #
+# QR Code PicPay for WooCommerce #
 **Contributors:** dadeke  
 **Donate link:** https://app.picpay.com/user/deividsondamasio  
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.2  
-**Stable tag:** 1.1.2  
+**Stable tag:** 1.1.3  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -39,9 +39,9 @@ You can contribute to the source code in our [GitHub](https://github.com/dadeke/
 
 ### Compatibility ###
 
-Compatible with later versions of WooCommerce 3.0.
+Compatible with latest versions of WooCommerce.
 
-The use of the plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) is mandatory, because in this way it is possible to send the fields of "CPF" or "CNPJ" to process the payment.
+The use of the plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) is mandatory, because in this way it is possible to send the fields of "CPF" or "CNPJ" to process the payment.
 
 ## Frequently Asked Questions ##
 
@@ -51,10 +51,10 @@ The use of the plugin [WooCommerce Extra Checkout Fields for Brazil](http://word
 
 ### What is needed to use this plugin? ###
 
-* WooCommerce version 3.0 or latter installed and active.
+* WooCommerce latest version installed and active.
 * Own an account at [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
 * Generate the PicPay Token and the Seller Token in the [PicPay Dashboard](https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
-* Have the plugin [WooCommerce Extra Checkout Fields for Brazil](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
+* Have the plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
 
 ### PicPay receives payments from which countries? ###
 
@@ -75,6 +75,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Changelog ##
 
+## 1.1.3 - 2019/09/24 ##
+
+* Updated plugin name from "WooCommerce PicPay" for "QR Code PicPay for WooCommerce".
+
 # 1.1.2 - 2019/07/30 #
 
 * Fixed order cancellation bug.
@@ -93,7 +97,11 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Upgrade Notice ##
 
-# 1.1.2 #
+## 1.1.3 ##
+
+* Updated plugin name from "WooCommerce PicPay" for "QR Code PicPay for WooCommerce".
+
+### 1.1.2 ###
 
 * Fix bug.
 
