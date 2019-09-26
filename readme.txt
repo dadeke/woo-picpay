@@ -4,7 +4,7 @@ Donate link: https://app.picpay.com/user/deividsondamasio
 Tags: woocommerce, picpay, payment
 Requires at least: 4.9
 Tested up to: 5.2
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Changelog ==
 
+= 1.1.4 - 2019/09/25 =
+
+* Set SVG with both fixed width.
+
 = 1.1.3 - 2019/09/24 =
 
 * Updated plugin name from "WooCommerce PicPay" for "QR Code PicPay for WooCommerce".
@@ -91,6 +95,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 == Upgrade Notice ==
+
+= 1.1.4 =
+
+* Set SVG with both fixed width.
 
 = 1.1.3 =
 

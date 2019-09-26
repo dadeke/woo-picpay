@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.2  
-**Stable tag:** 1.1.3  
+**Stable tag:** 1.1.4  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -74,7 +74,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Changelog ##
 
-## 1.1.3 - 24/09/2019 ##
+## 1.1.4 - 25/09/2019 ##
+
+* Definido SVG PicPay com largura fixa.
+
+### 1.1.3 - 24/09/2019 ###
 
 * Atualizado o nome do plugin de "WooCommerce PicPay" para "QR Code PicPay para WooCommerce".
 
@@ -96,7 +100,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Aviso de atualização ##
 
-## 1.1.3 ##
+## 1.1.4 ##
+
+* Definido SVG PicPay com largura fixa.
+
+### 1.1.3 ###
 
 * Atualizado o nome do plugin de "WooCommerce PicPay" para "QR Code PicPay para WooCommerce".
 
