@@ -3,7 +3,7 @@
  * API class
  *
  * @package Woo_PicPay/Classes/API
- * @version 1.1.3
+ * @version 1.1.4
  */
 
 if(!defined('ABSPATH')) {
