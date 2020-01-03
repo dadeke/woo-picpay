@@ -5,12 +5,12 @@
  * Description:          Includes PicPay E-Commerce as a payment gateway to WooCommerce.
  * Author:               Deividson Damasio
  * Author URI:           https://www.linkedin.com/in/dadeke/
- * Version:              1.1.4
+ * Version:              1.1.5
  * License:              GPLv3 or later
  * Text Domain:          woo-picpay
  * Domain Path:          /languages
  * WC requires at least: 3.0.0
- * WC tested up to:      3.7.0
+ * WC tested up to:      3.8.1
  *
  * QR Code PicPay for WooCommerce is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@
 defined('ABSPATH') || exit;
 
 // Plugin constants.
-define('WC_PICPAY_VERSION', '1.1.4');
+define('WC_PICPAY_VERSION', '1.1.5');
 define('WC_PICPAY_PLUGIN_FILE', __FILE__);
 
 if(!class_exists('WC_PicPay')) {
