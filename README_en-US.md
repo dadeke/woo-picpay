@@ -3,7 +3,7 @@
 **Donate link:** https://app.picpay.com/user/deividsondamasio  
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
-**Tested up to:** 5.2  
+**Tested up to:** 5.3  
 **Stable tag:** 1.1.4  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
@@ -74,6 +74,11 @@ The plugin has been configured to receive payments only from users who select Br
 ![3. Example of the PicPay payment page.](http://ps.w.org/woo-picpay/assets/screenshot-3.png)
 
 ## Changelog ##
+
+## 1.1.5 - 2020/01/03 ##
+
+* Remove unused code.
+* WC tested up to 3.8.1
 
 ## 1.1.4 - 2019/09/25 ##
 
