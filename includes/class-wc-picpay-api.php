@@ -306,11 +306,6 @@ class WC_PicPay_API {
 		$order_id = method_exists($order, 'get_id') ? $order->get_id() : $order->id;
 		$authorization_id = $order->get_meta('PicPay_authorizationId');
 		
-		// Remove in future releases.
-		if(empty($authorization_id)) {
-			$authorization_id = $order->get_meta('authorizationId');
-		}
-		
 		if(!empty($authorization_id)) {
 			$json = json_encode(array('authorizationId' => $authorization_id));
 			
