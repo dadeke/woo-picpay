@@ -80,7 +80,7 @@ The plugin has been configured to receive payments only from users who select Br
 * Remove unused code.
 * WC tested up to 3.8.1
 
-## 1.1.4 - 2019/09/25 ##
+### 1.1.4 - 2019/09/25 ###
 
 * Set SVG with both fixed width.
 

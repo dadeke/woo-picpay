@@ -79,7 +79,7 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 * Remoção de código não utilizado.
 * WC testado até 3.8.1
 
-## 1.1.4 - 25/09/2019 ##
+### 1.1.4 - 25/09/2019 ###
 
 * Definido SVG PicPay com largura fixa.
 
