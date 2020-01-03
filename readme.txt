@@ -101,6 +101,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Upgrade Notice ==
 
+= 1.1.5 =
+
+* Remove unused code.
+
 = 1.1.4 =
 
 * Set SVG with both fixed width.

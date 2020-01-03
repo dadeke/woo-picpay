@@ -105,7 +105,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Aviso de atualização ##
 
-## 1.1.4 ##
+## 1.1.5 ##
+
+* Remoção de código não utilizado.
+
+### 1.1.4 ###
 
 * Definido SVG PicPay com largura fixa.
 
