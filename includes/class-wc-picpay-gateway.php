@@ -193,9 +193,14 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			
 			$order->add_order_note(__('PicPay: The buyer initiated the transaction, but so far the PicPay not received any payment information.', 'woo-picpay'));
 			
+			$url_redirect = $response['url'];
+			if(wp_is_mobile()) {
+				$url_redirect = $this->get_return_url($order);
+			}
+
 			return array(
 				'result'   => 'success',
-				'redirect' => $response['url'],
+				'redirect' => $url_redirect,
 			);
 		}
 		else {
