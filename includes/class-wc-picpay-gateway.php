@@ -56,6 +56,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		add_action('woocommerce_receipt_' . $this->id, array($this, 'receipt_page'));
 		add_action('woocommerce_order_status_cancelled', array($this, 'cancel_payment'));
 		add_action('woocommerce_order_status_refunded', array($this, 'cancel_payment'));
+		add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
 	}
 
 	/**
@@ -233,7 +234,25 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			}
 		}
 	}
-	
+
+	/**
+	 * Output for the thank you page.
+	 *
+	 * @param int $order_id Order ID.
+	 */
+	public function thankyou_page($order_id) {
+		$order = wc_get_order($order_id);
+
+		if($order->status == 'pending') {
+			$payment_url = $order->get_meta('PicPay_PaymentURL');
+
+			if(!empty($payment_url)) {
+				@ob_clean();
+				include dirname(__FILE__) . '/views/html-open-picpay.php';
+			}
+		}
+	}
+
 	/**
 	 * Process callback.
 	 */
