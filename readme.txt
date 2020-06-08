@@ -70,6 +70,15 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Changelog ==
 
+= 1.1.6 - 2020/06/08 =
+
+* Added config param "Invoice Prefix".
+* Added response of the payment request in the log.
+* Allow the callback to cancel orders only with "Pending payment" and "On hold" status.
+* Fix. Reduce stock only from "Pending payment" to "Processing" status.
+* Changed PicPay dashboard links.
+* WC tested up to 4.2.0
+
 = 1.1.5 - 2020/01/03 =
 
 * Remove unused code.
@@ -100,6 +109,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 == Upgrade Notice ==
+
+= 1.1.6 =
+
+* See changelog for more details.
 
 = 1.1.5 =
 

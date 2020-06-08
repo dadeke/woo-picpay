@@ -74,7 +74,16 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Changelog ##
 
-## 1.1.5 - 03/01/2020 ##
+## 1.1.6 - 08/06/2020 ##
+
+* Adicionado parâmetro de configuração "Prefixo de pedido".
+* Adicionado a resposta da solicitação de pagamento no log.
+* Permitir que o callback cancele somente pedidos com o status "Pagamento Pendente" e "Em espera".
+* Correção. Reduza o estoque apenas do status "Pagamento Pendente" para "Processando".
+* Alterar os links do painel PicPay.
+* WC testado até 4.2.0
+
+### 1.1.5 - 03/01/2020 ###
 
 * Remoção de código não utilizado.
 * WC testado até 3.8.1
@@ -105,7 +114,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Aviso de atualização ##
 
-## 1.1.5 ##
+## 1.1.6 ##
+
+* Consulte o changelog para obter mais detalhes.
+
+### 1.1.5 ###
 
 * Remoção de código não utilizado.
 
