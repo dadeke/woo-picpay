@@ -174,14 +174,13 @@ class WC_PicPay_API {
 		}
 		
 		if($response['response']['code'] === 200) {
-			$url = $body['paymentUrl'];
-
 			if($this->gateway->debug == 'yes') {
-				$this->gateway->log->add($this->gateway->id, 'PicPay Payment URL created with success! The URL is: ' . $url);
+				$this->gateway->log->add($this->gateway->id, 'PicPay Payment URL created with success! The return is: '
+					. print_r($body, true));
 			}
 
 			return array(
-				'url'   => $url,
+				'url'   => $body['paymentUrl'],
 				'data'  => '',
 				'error' => ''
 			);
