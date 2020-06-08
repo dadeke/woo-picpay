@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: QR Code PicPay for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-03 03:15+0000\n"
+"POT-Creation-Date: 2020-06-08 17:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-5.0.3"
+"X-Loco-Version: 2.4.0; wp-5.4.1"
 
 #: includes/class-wc-picpay-gateway.php:25
 msgid "Accept payments using the PicPay."
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Active WooCommerce"
 msgstr ""
 
-#: includes/class-wc-picpay-api.php:224
+#: includes/class-wc-picpay-api.php:223
 msgid ""
 "An error has occurred while processing your payment, please try again. Or "
 "contact us for assistance."
@@ -43,7 +43,7 @@ msgid ""
 "Currency <code>%s</code> is not supported. Works only with Brazilian Real."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:139
+#: includes/class-wc-picpay-gateway.php:148
 msgid "Debug Log"
 msgstr ""
 
@@ -52,27 +52,26 @@ msgid "Deividson Damasio"
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-ecfb.php:20
-msgid ""
-"depends on the last version of Brazilian Market on WooCommerce to work!"
+msgid "depends on the last version of Brazilian Market on WooCommerce to work!"
 msgstr ""
 
 #: includes/admin/views/html-notice-missing-woocommerce.php:20
 msgid "depends on the last version of WooCommerce to work!"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:120
+#: includes/class-wc-picpay-gateway.php:122
 msgid "Description"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:141
+#: includes/class-wc-picpay-gateway.php:150
 msgid "Enable logging"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:109
+#: includes/class-wc-picpay-gateway.php:111
 msgid "Enable PicPay"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:107
+#: includes/class-wc-picpay-gateway.php:109
 msgid "Enable/Disable"
 msgstr ""
 
@@ -83,16 +82,16 @@ msgid ""
 "org. Thank you in advance!"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:129
+#: includes/class-wc-picpay-gateway.php:131
 msgid "here"
-msgstr ""
-
-#. Author URI of the plugin
-msgid "http://deividson.net"
 msgstr ""
 
 #. URI of the plugin
 msgid "https://github.com/dadeke/woo-picpay"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.linkedin.com/in/dadeke/"
 msgstr ""
 
 #. Description of the plugin
@@ -107,8 +106,12 @@ msgstr ""
 msgid "Install WooCommerce"
 msgstr ""
 
+#: includes/class-wc-picpay-gateway.php:141
+msgid "Invoice Prefix"
+msgstr ""
+
 #. %s: log page link
-#: includes/class-wc-picpay-gateway.php:144
+#: includes/class-wc-picpay-gateway.php:153
 #, php-format
 msgid "Log PicPay events, such as API requests, inside %s"
 msgstr ""
@@ -122,31 +125,31 @@ msgid "Make a review"
 msgstr ""
 
 #. %s: order number
-#: includes/class-wc-picpay-gateway.php:324
+#: includes/class-wc-picpay-gateway.php:359
 #, php-format
 msgid "Order %s has been marked as refunded by PicPay."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:123
+#: includes/class-wc-picpay-gateway.php:125
 msgid "Pay via PicPay"
 msgstr ""
 
 #. %s: order number
-#: includes/class-wc-picpay-gateway.php:321
+#: includes/class-wc-picpay-gateway.php:356
 #, php-format
 msgid "Payment for order %s refunded"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:322
+#: includes/class-wc-picpay-gateway.php:357
 msgid "Payment refunded"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:243
+#: includes/class-wc-picpay-gateway.php:276
 msgid "Payment refunded directly by PicPay."
 msgstr ""
 
-#: includes/class-wc-picpay-api.php:224 includes/class-wc-picpay-gateway.php:24
-#: includes/class-wc-picpay-gateway.php:117
+#: includes/class-wc-picpay-api.php:223 includes/class-wc-picpay-gateway.php:24
+#: includes/class-wc-picpay-gateway.php:119
 msgid "PicPay"
 msgstr ""
 
@@ -159,83 +162,62 @@ msgstr ""
 msgid "PicPay Payment URL not found."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:126
+#: includes/class-wc-picpay-gateway.php:128
 msgid "PicPay Token"
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:303
+#: includes/class-wc-picpay-gateway.php:338
 msgid "PicPay: Payment approved."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:329
+#: includes/class-wc-picpay-gateway.php:364
 msgid "PicPay: Payment chargeback."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:307
+#: includes/class-wc-picpay-gateway.php:342
 msgid "PicPay: Payment completed and credited to your account."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:291
+#: includes/class-wc-picpay-gateway.php:325
 msgid "PicPay: Payment expired."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:312
-#: includes/class-wc-picpay-gateway.php:316
+#: includes/class-wc-picpay-gateway.php:347
+#: includes/class-wc-picpay-gateway.php:351
 msgid "PicPay: Payment refunded."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:295
+#: includes/class-wc-picpay-gateway.php:330
 msgid "PicPay: Payment under review."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:194
+#: includes/class-wc-picpay-gateway.php:203
 msgid ""
 "PicPay: The buyer initiated the transaction, but so far the PicPay not "
 "received any payment information."
 msgstr ""
 
+#: includes/class-wc-picpay-gateway.php:143
+msgid ""
+"Please enter a prefix for your invoice numbers. If you use your PicPay "
+"account for multiple stores ensure this prefix is unqiue as PicPay will not "
+"allow orders with the same invoice number."
+msgstr ""
+
 #. %s: link to PicPay settings
-#: includes/class-wc-picpay-gateway.php:129
+#: includes/class-wc-picpay-gateway.php:131
 #, php-format
 msgid ""
 "Please enter your PicPay token. This is needed to process the payments and "
 "notifications. Is possible generate a new token %s."
 msgstr ""
 
-#: includes/class-wc-picpay-gateway.php:135
+#: includes/class-wc-picpay-gateway.php:137
 msgid "Please enter your Seller token."
 msgstr ""
 
 #: includes/class-wc-picpay-gateway.php:26
 msgid "Proceed to payment"
-msgstr ""
-
-#: includes/class-wc-picpay-gateway.php:133
-msgid "Seller Token"
-msgstr ""
-
-#: includes/class-wc-picpay.php:52
-msgid "Settings"
-msgstr ""
-
-#: includes/class-wc-picpay-gateway.php:95
-msgid "System Status &gt; Logs"
-msgstr ""
-
-#: includes/class-wc-picpay-gateway.php:122
-msgid "This controls the description which the user sees during checkout."
-msgstr ""
-
-#: includes/class-wc-picpay-gateway.php:115
-msgid "This controls the title which the user sees during checkout."
-msgstr ""
-
-#: includes/class-wc-picpay-gateway.php:113
-msgid "Title"
-msgstr ""
-
-#: includes/class-wc-picpay-api.php:197
-msgid "Too bad! The token from the PicPay are invalids my little friend!"
 msgstr ""
 
 #. Name of the plugin
@@ -245,6 +227,38 @@ msgstr ""
 msgid "QR Code PicPay for WooCommerce"
 msgstr ""
 
+#: includes/class-wc-picpay-gateway.php:135
+msgid "Seller Token"
+msgstr ""
+
+#: includes/class-wc-picpay.php:52
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:97
+msgid "System Status &gt; Logs"
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:124
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:117
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-picpay-gateway.php:115
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-picpay-api.php:196
+msgid "Too bad! The token from the PicPay are invalids my little friend!"
+msgstr ""
+
 #: includes/admin/views/html-notice-token-missing.php:14
 msgid "You should inform your PicPay token and Seller Token."
+msgstr ""
+
+#: includes/views/html-open-picpay.php:12
+msgid "Open PicPay"
 msgstr ""
