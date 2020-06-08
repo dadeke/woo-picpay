@@ -321,8 +321,10 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		
 		switch($payment['status']) {
 			case 'expired':
-				$order->update_status('cancelled', __('PicPay: Payment expired.', 'woo-picpay'));
-				
+				if(($order->get_status() == 'pending') || ($order->get_status() == 'on-hold')) {
+					$order->update_status('cancelled', __('PicPay: Payment expired.', 'woo-picpay'));
+				}
+
 				break;
 			case 'analysis':
 				$order->update_status('on-hold', __('PicPay: Payment under review.', 'woo-picpay'));
