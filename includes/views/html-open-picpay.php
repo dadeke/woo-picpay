@@ -9,4 +9,4 @@ if(!defined('ABSPATH')) {
 }
 ?>
 
-<a class="button alt" href="<?php echo esc_url($payment_url); ?>" target="_blank"><?php esc_html_e('Open PicPay', 'woo-picpay'); ?></a>
+<a class="button alt" href="<?php echo esc_url($payment_url); ?>" target="_blank"><?php echo __('Open PicPay', 'woo-picpay'); ?></a>

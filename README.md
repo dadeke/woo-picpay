@@ -29,7 +29,7 @@ Este software é gratuito e não está associado ao PicPay. PicPay é uma marca 
 ### Como testar ###
 
 A API do PicPay não possui um ambiente de homologação. Então todos os testes de vendas devem ser feitos usando o ambiente de produção.
-Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
+Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
 Depois que o Status do pedido for alterado para "Cancelado" no WooCommerce, automaticamente (depois de alguns segundos) o plugin deverá alterar o Status do pedido para "Reembolsado".
 
 ### Contribuição ###
@@ -52,7 +52,7 @@ Este plugin está licenciado como GPL.
 
 * Ter instalado o plugin WooCommerce mais recente.
 * Possuir uma conta no [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
-* Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/dashboard/login "Painel do PicPay").
+* Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/login "Painel do PicPay").
 * Ter o plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e configurado.
 
 ### PicPay recebe pagamentos de quais países? ###
