@@ -332,7 +332,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				
 				break;
 			case 'paid':
-				if($order->get_status() == 'created') {
+				if($order->get_status() == 'pending') {
 					wc_reduce_stock_levels($order_id);
 				}
 				$order->update_status('processing', __('PicPay: Payment approved.', 'woo-picpay'));
