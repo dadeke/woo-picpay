@@ -32,11 +32,12 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$this->init_settings();
 
 		// Define user set variables.
-		$this->title        = $this->get_option('title');
-		$this->description  = $this->get_option('description');
-		$this->picpay_token = $this->get_option('picpay_token');
-		$this->seller_token = $this->get_option('seller_token');
-		$this->debug        = $this->get_option('debug');
+		$this->title             = $this->get_option('title');
+		$this->description       = $this->get_option('description');
+		$this->picpay_token      = $this->get_option('picpay_token');
+		$this->seller_token      = $this->get_option('seller_token');
+		$this->invoice_prefix    = $this->get_option('invoice_prefix');
+		$this->debug             = $this->get_option('debug');
 
 		// Active logs.
 		if($this->debug == 'yes') {
@@ -135,6 +136,13 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'description' => __('Please enter your Seller token.', 'woo-picpay'),
 				'default'     => '',
+			),
+			'invoice_prefix'         => array(
+				'title'       => __('Invoice Prefix', 'woo-picpay'),
+				'type'        => 'text',
+				'description' => __('Please enter a prefix for your invoice numbers. If you use your PicPay account for multiple stores ensure this prefix is unqiue as PicPay will not allow orders with the same invoice number.', 'woo-picpay'),
+				'desc_tip'    => true,
+				'default'     => 'WC-',
 			),
 			'debug'                => array(
 				'title'       => __('Debug Log', 'woo-picpay'),
@@ -260,7 +268,8 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		@ob_clean();
 		$payment = $this->api->process_callback();
 		if(is_array($payment)) {
-			$order = wc_get_order($payment['referenceId']);
+			$order_id = intval(str_replace($this->invoice_prefix, '', $payment['referenceId']));
+			$order = wc_get_order($order_id);
 			$cancellation_id = $order->get_meta('PicPay_cancellationId');
 			
 			if(($payment['status'] == 'refunded') && empty($cancellation_id)) {
