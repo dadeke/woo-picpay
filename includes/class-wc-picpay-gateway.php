@@ -3,7 +3,7 @@
  * Gateway class
  *
  * @package Woo_PicPay/Classes/Gateway
- * @version 1.1.5
+ * @version 1.1.6
  */
 
 if(!defined('ABSPATH')) {
@@ -32,11 +32,12 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$this->init_settings();
 
 		// Define user set variables.
-		$this->title        = $this->get_option('title');
-		$this->description  = $this->get_option('description');
-		$this->picpay_token = $this->get_option('picpay_token');
-		$this->seller_token = $this->get_option('seller_token');
-		$this->debug        = $this->get_option('debug');
+		$this->title             = $this->get_option('title');
+		$this->description       = $this->get_option('description');
+		$this->picpay_token      = $this->get_option('picpay_token');
+		$this->seller_token      = $this->get_option('seller_token');
+		$this->invoice_prefix    = $this->get_option('invoice_prefix');
+		$this->debug             = $this->get_option('debug');
 
 		// Active logs.
 		if($this->debug == 'yes') {
@@ -56,6 +57,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		add_action('woocommerce_receipt_' . $this->id, array($this, 'receipt_page'));
 		add_action('woocommerce_order_status_cancelled', array($this, 'cancel_payment'));
 		add_action('woocommerce_order_status_refunded', array($this, 'cancel_payment'));
+		add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
 	}
 
 	/**
@@ -135,6 +137,13 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				'description' => __('Please enter your Seller token.', 'woo-picpay'),
 				'default'     => '',
 			),
+			'invoice_prefix'         => array(
+				'title'       => __('Invoice Prefix', 'woo-picpay'),
+				'type'        => 'text',
+				'description' => __('Please enter a prefix for your invoice numbers. If you use your PicPay account for multiple stores ensure this prefix is unqiue as PicPay will not allow orders with the same invoice number.', 'woo-picpay'),
+				'desc_tip'    => true,
+				'default'     => 'WC-',
+			),
 			'debug'                => array(
 				'title'       => __('Debug Log', 'woo-picpay'),
 				'type'        => 'checkbox',
@@ -193,9 +202,14 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			
 			$order->add_order_note(__('PicPay: The buyer initiated the transaction, but so far the PicPay not received any payment information.', 'woo-picpay'));
 			
+			$url_redirect = $response['url'];
+			if(wp_is_mobile()) {
+				$url_redirect = $this->get_return_url($order);
+			}
+
 			return array(
 				'result'   => 'success',
-				'redirect' => $response['url'],
+				'redirect' => $url_redirect,
 			);
 		}
 		else {
@@ -228,7 +242,25 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			}
 		}
 	}
-	
+
+	/**
+	 * Output for the thank you page.
+	 *
+	 * @param int $order_id Order ID.
+	 */
+	public function thankyou_page($order_id) {
+		$order = wc_get_order($order_id);
+
+		if($order->status == 'pending') {
+			$payment_url = $order->get_meta('PicPay_PaymentURL');
+
+			if(!empty($payment_url)) {
+				@ob_clean();
+				include dirname(__FILE__) . '/views/html-open-picpay.php';
+			}
+		}
+	}
+
 	/**
 	 * Process callback.
 	 */
@@ -236,7 +268,8 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		@ob_clean();
 		$payment = $this->api->process_callback();
 		if(is_array($payment)) {
-			$order = wc_get_order($payment['referenceId']);
+			$order_id = intval(str_replace($this->invoice_prefix, '', $payment['referenceId']));
+			$order = wc_get_order($order_id);
 			$cancellation_id = $order->get_meta('PicPay_cancellationId');
 			
 			if(($payment['status'] == 'refunded') && empty($cancellation_id)) {
@@ -288,8 +321,10 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		
 		switch($payment['status']) {
 			case 'expired':
-				$order->update_status('cancelled', __('PicPay: Payment expired.', 'woo-picpay'));
-				
+				if(($order->get_status() == 'pending') || ($order->get_status() == 'on-hold')) {
+					$order->update_status('cancelled', __('PicPay: Payment expired.', 'woo-picpay'));
+				}
+
 				break;
 			case 'analysis':
 				$order->update_status('on-hold', __('PicPay: Payment under review.', 'woo-picpay'));
@@ -297,7 +332,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				
 				break;
 			case 'paid':
-				if($order->get_status() == 'created') {
+				if($order->get_status() == 'pending') {
 					wc_reduce_stock_levels($order_id);
 				}
 				$order->update_status('processing', __('PicPay: Payment approved.', 'woo-picpay'));

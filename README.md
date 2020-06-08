@@ -3,8 +3,8 @@
 **Donate link:** https://app.picpay.com/user/deividsondamasio  
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
-**Tested up to:** 5.3  
-**Stable tag:** 1.1.5  
+**Tested up to:** 5.4  
+**Stable tag:** 1.1.6  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -29,7 +29,7 @@ Este software é gratuito e não está associado ao PicPay. PicPay é uma marca 
 ### Como testar ###
 
 A API do PicPay não possui um ambiente de homologação. Então todos os testes de vendas devem ser feitos usando o ambiente de produção.
-Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
+Os valores podem ser estornados pelo [Painel do Lojista - PicPay](https://lojista.picpay.com/login) ou pelo WooCommerce alterando o Status do pedido para "Cancelado".
 Depois que o Status do pedido for alterado para "Cancelado" no WooCommerce, automaticamente (depois de alguns segundos) o plugin deverá alterar o Status do pedido para "Reembolsado".
 
 ### Contribuição ###
@@ -52,7 +52,7 @@ Este plugin está licenciado como GPL.
 
 * Ter instalado o plugin WooCommerce mais recente.
 * Possuir uma conta no [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
-* Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/dashboard/login "Painel do PicPay").
+* Gerar o PicPay Token e o Seller Token no [Painel do PicPay](https://lojista.picpay.com/login "Painel do PicPay").
 * Ter o plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) instalado e configurado.
 
 ### PicPay recebe pagamentos de quais países? ###
@@ -74,7 +74,16 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Changelog ##
 
-## 1.1.5 - 03/01/2020 ##
+## 1.1.6 - 08/06/2020 ##
+
+* Adicionado parâmetro de configuração "Prefixo de pedido".
+* Adicionado a resposta da solicitação de pagamento no log.
+* Permitir que o callback cancele somente pedidos com o status "Pagamento Pendente" e "Em espera".
+* Correção. Reduza o estoque apenas do status "Pagamento Pendente" para "Processando".
+* Alterar os links do painel PicPay.
+* WC testado até 4.2.0
+
+### 1.1.5 - 03/01/2020 ###
 
 * Remoção de código não utilizado.
 * WC testado até 3.8.1
@@ -105,7 +114,11 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Aviso de atualização ##
 
-## 1.1.5 ##
+## 1.1.6 ##
+
+* Consulte o changelog para obter mais detalhes.
+
+### 1.1.5 ###
 
 * Remoção de código não utilizado.
 

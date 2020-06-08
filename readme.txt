@@ -3,8 +3,8 @@ Contributors: dadeke
 Donate link: https://app.picpay.com/user/deividsondamasio
 Tags: woocommerce, picpay, payment
 Requires at least: 4.9
-Tested up to: 5.3
-Stable tag: 1.1.5
+Tested up to: 5.4
+Stable tag: 1.1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,7 +30,7 @@ This software is free and is not associated with PicPay. PicPay is a registered 
 = How to test =
 
 The PicPay API does not have an production environment. All sales testing should be done using the production environment.
-The values can be refund by the [Painel do Lojista - PicPay](https://lojista.picpay.com/dashboard/login) or by WooCommerce changing the order Status to "Canceled".
+The values can be refund by the [Painel do Lojista - PicPay](https://lojista.picpay.com/login) or by WooCommerce changing the order Status to "Canceled".
 After the order Status is changed to "Canceled" in WooCommerce, automatically (after a few seconds) the plugin should change the order Status to "Refunded".
 
 = Contribute =
@@ -53,7 +53,7 @@ The use of the plugin [Brazilian Market on WooCommerce](http://wordpress.org/plu
 
 * WooCommerce latest version installed and active.
 * Own an account at [PicPay E-commerce](https://ecommerce.picpay.com/ "PicPay E-commerce").
-* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard](https://lojista.picpay.com/dashboard/login "PicPay Dashboard").
+* Generate the PicPay Token and the Seller Token in the [PicPay Dashboard](https://lojista.picpay.com/login "PicPay Dashboard").
 * Have the plugin [Brazilian Market on WooCommerce](http://wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/) installed and configured.
 
 = PicPay receives payments from which countries? =
@@ -69,6 +69,15 @@ The plugin has been configured to receive payments only from users who select Br
 3. Example of the PicPay payment page.
 
 == Changelog ==
+
+= 1.1.6 - 2020/06/08 =
+
+* Added config param "Invoice Prefix".
+* Added response of the payment request in the log.
+* Allow the callback to cancel orders only with "Pending payment" and "On hold" status.
+* Fix. Reduce stock only from "Pending payment" to "Processing" status.
+* Changed PicPay dashboard links.
+* WC tested up to 4.2.0
 
 = 1.1.5 - 2020/01/03 =
 
@@ -100,6 +109,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 == Upgrade Notice ==
+
+= 1.1.6 =
+
+* See changelog for more details.
 
 = 1.1.5 =
 
