@@ -303,6 +303,7 @@ class WC_PicPay_API {
 	public function do_payment_cancel($order) {
 		$json = '';
 		$order_id = method_exists($order, 'get_id') ? $order->get_id() : $order->id;
+		$order_id = $this->gateway->invoice_prefix . strval($order_id);
 		$authorization_id = $order->get_meta('PicPay_authorizationId');
 		
 		if(!empty($authorization_id)) {
