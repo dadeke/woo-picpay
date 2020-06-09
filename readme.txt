@@ -70,6 +70,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Changelog ==
 
+= 1.1.7 - 2020/06/09 =
+
+* Fix bug. Added the invoice prefix in the request cancel.
+
 = 1.1.6 - 2020/06/08 =
 
 * Added config param "Invoice Prefix".
@@ -109,6 +113,10 @@ The plugin has been configured to receive payments only from users who select Br
 * Published the first version.
 
 == Upgrade Notice ==
+
+= 1.1.7 =
+
+* See changelog for more details.
 
 = 1.1.6 =
 

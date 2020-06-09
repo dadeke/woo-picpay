@@ -69,6 +69,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 == Changelog ==
 
+= 1.1.7 - 09/06/2020 =
+
+* Correção de bug. Adicionado o prefixo de pedido na requisição de cancelamento.
+
 = 1.1.6 - 08/06/2020 =
 
 * Adicionado parâmetro de configuração "Prefixo de pedido".
@@ -108,6 +112,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 * Publicado a primeira versão.
 
 == Aviso de atualização  ==
+
+= 1.1.7 =
+
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.6 =
 
