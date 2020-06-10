@@ -233,7 +233,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$order = wc_get_order($order_id);
 		$payment_url = $order->get_meta('PicPay_PaymentURL');
 		
-		if($order->status == 'pending') {
+		if($order->get_status() == 'pending') {
 			if(!empty($payment_url)) {
 				wp_redirect($payment_url, 302);
 			}
@@ -251,7 +251,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	public function thankyou_page($order_id) {
 		$order = wc_get_order($order_id);
 
-		if($order->status == 'pending') {
+		if($order->get_status() == 'pending') {
 			$payment_url = $order->get_meta('PicPay_PaymentURL');
 
 			if(!empty($payment_url)) {
