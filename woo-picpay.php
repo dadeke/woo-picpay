@@ -5,7 +5,7 @@
  * Description:          Includes PicPay E-Commerce as a payment gateway to WooCommerce.
  * Author:               Deividson Damasio
  * Author URI:           https://www.linkedin.com/in/dadeke/
- * Version:              1.1.7
+ * Version:              1.1.8
  * License:              GPLv3 or later
  * Text Domain:          woo-picpay
  * Domain Path:          /languages
@@ -32,7 +32,7 @@
 defined('ABSPATH') || exit;
 
 // Plugin constants.
-define('WC_PICPAY_VERSION', '1.1.7');
+define('WC_PICPAY_VERSION', '1.1.8');
 define('WC_PICPAY_PLUGIN_FILE', __FILE__);
 
 if(!class_exists('WC_PicPay')) {
