@@ -69,6 +69,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 == Changelog ==
 
+= 1.1.8 - 10/06/2020 =
+
+* Correção "As propriedades do pedido não devem ser acessadas diretamente."
+
 = 1.1.7 - 09/06/2020 =
 
 * Correção de bug. Adicionado o prefixo de pedido na requisição de cancelamento.
@@ -113,6 +117,10 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 == Aviso de atualização  ==
 
+= 1.1.8 =
+
+* Consulte o changelog para obter mais detalhes.
+
 = 1.1.7 =
 
 * Consulte o changelog para obter mais detalhes.
@@ -123,26 +131,30 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 = 1.1.5 =
 
-* Remoção de código não utilizado.
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.4 =
 
-* Definido SVG PicPay com largura fixa.
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.3 =
 
-* Atualizado o nome do plugin de "WooCommerce PicPay" para "QR Code PicPay para WooCommerce".
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.2 =
 
-* Correção de bug.
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.1 =
 
-* Salva os metadados do PicPay como chave única.
+* Consulte o changelog para obter mais detalhes.
 
 = 1.1.0 =
 
-* Salva os metadados com um prefixo que identifica os dados do PicPay.
+* Consulte o changelog para obter mais detalhes.
+
+= 1.0.0 =
+
+* Consulte o changelog para obter mais detalhes.
 
 "Porque Deus tanto amou o mundo que deu o seu Filho Unigênito, para que todo o que nele crer não pereça, mas tenha a vida eterna." João 3:16

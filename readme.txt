@@ -70,6 +70,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Changelog ==
 
+= 1.1.8 - 2020/06/10 =
+
+* Fix "Order properties should not be accessed directly."
+
 = 1.1.7 - 2020/06/09 =
 
 * Fix bug. Added the invoice prefix in the request cancel.
@@ -114,6 +118,10 @@ The plugin has been configured to receive payments only from users who select Br
 
 == Upgrade Notice ==
 
+= 1.1.8 =
+
+* See changelog for more details.
+
 = 1.1.7 =
 
 * See changelog for more details.
@@ -124,26 +132,30 @@ The plugin has been configured to receive payments only from users who select Br
 
 = 1.1.5 =
 
-* Remove unused code.
+* See changelog for more details.
 
 = 1.1.4 =
 
-* Set SVG with both fixed width.
+* See changelog for more details.
 
 = 1.1.3 =
 
-* Updated plugin name from "WooCommerce PicPay" for "QR Code PicPay for WooCommerce".
+* See changelog for more details.
 
 = 1.1.2 =
 
-* Fix bug.
+* See changelog for more details.
 
 = 1.1.1 =
 
-* Save the PicPay metadata as a unique key.
+* See changelog for more details.
 
 = 1.1.0 =
 
-* Saves the metadata with a prefix that identifies the PicPay data.
+* See changelog for more details.
+
+= 1.0.0 =
+
+* See changelog for more details.
 
 "For God so loved the world, that he gave his only begotten Son, that whosoever believeth on him should not perish, but have eternal life." John 3:16
