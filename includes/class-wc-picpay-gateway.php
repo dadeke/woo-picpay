@@ -58,6 +58,10 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		add_action('woocommerce_order_status_cancelled', array($this, 'cancel_payment'));
 		add_action('woocommerce_order_status_refunded', array($this, 'cancel_payment'));
 		add_action('woocommerce_thankyou', array($this, 'thankyou_page'));
+
+		if(defined('REST_REQUEST') && (REST_REQUEST === true)) {
+			add_action('woocommerce_update_order', array($this, 'api_process_payment'));
+		}
 	}
 
 	/**
@@ -179,9 +183,10 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	 * Process the payment and return the result.
 	 *
 	 * @param  int $order_id Order ID.
-	 * @return array
+	 * @param  boolean $is_rest_api Order created from the REST API.
+	 * @return mixed
 	 */
-	public function process_payment($order_id) {
+	public function process_payment($order_id, $is_rest_api = false) {
 		$response = array();
 		$order = wc_get_order($order_id);
 		
@@ -192,11 +197,21 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			
 			if($response['url']) {
 				$order->add_meta_data('PicPay_PaymentURL', $response['url'], true);
+				if($is_rest_api) {
+					$order->add_meta_data('PicPay_QRCode', $response['data']['qrcode_base64'], true);
+				}
+
 				$order->save();
 			}
 		}
-		
+
 		if($response['url']) {
+			if($is_rest_api) {
+				$order->add_order_note(__('PicPay: The transaction initiated from the REST API, but so far the PicPay not received any payment information.', 'woo-picpay'));
+
+				return;
+			}
+
 			// Remove cart.
 			WC()->cart->empty_cart();
 			
@@ -389,6 +404,19 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			if(is_array($payment)) {
 				$this->save_payment_meta_data($order, $payment);
 			}
+		}
+	}
+
+	/**
+	 * Process the payment order created from the REST API.
+	 *
+	 * @param  int $order_id Order ID.
+	 */
+	public function api_process_payment($order_id) {
+		$order = wc_get_order($order_id);
+
+		if(($order->get_payment_method() === 'picpay') && (!$order->get_meta('PicPay_PaymentURL'))) {
+			$this->process_payment($order_id, true);
 		}
 	}
 }
