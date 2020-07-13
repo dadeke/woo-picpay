@@ -376,7 +376,11 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 	 */
 	public function cancel_payment($order_id) {
 		$order = wc_get_order($order_id);
-		
+
+		if($order->get_payment_method() !== 'picpay') {
+			return;
+		}
+
 		$cancellation_id = $order->get_meta('PicPay_cancellationId');
 		
 		if(empty($cancellation_id)) { // Prevents repeat refunded.
