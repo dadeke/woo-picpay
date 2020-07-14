@@ -97,7 +97,8 @@ class WC_PicPay_API {
 	protected function get_request_headers() {
 		return array(
 						'x-picpay-token' => $this->gateway->picpay_token,
-						'Content-Type' => 'application/json'
+						'Content-Type' => 'application/json',
+						'Accept' => 'application/json'
 					);
 	}
 	
