@@ -72,7 +72,7 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 = 1.2.0 - 13/07/2020 =
 
 * Correção para não solicitar cancelamento na API PicPay se outro método de pagamento foi usado.
-* Adicionado o processo de solicitação de pagamento com a criação do pedido via API REST do WooCommerce.
+* Adicionado o processo de solicitar pagamento com a criação do pedido via API REST do WooCommerce.
 * Adicionado nova funcionalidade: Expiração do QR Code.
 * Adicionado hooks para que outros desenvolvedores possam estendê-lo e modificá-lo.
 * Adicionado cabeçalho "Accept: application/json". Boa prática.
