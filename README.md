@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.4  
-**Stable tag:** 1.1.8  
+**Stable tag:** 1.2.0  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -74,7 +74,15 @@ O plugin foi configurado para receber pagamentos apenas de usuários que selecio
 
 ## Changelog ##
 
-## 1.1.8 - 10/06/2020 ##
+## 1.2.0 - 13/07/2020 ##
+
+* Correção para não solicitar cancelamento na API PicPay se outro método de pagamento foi usado.
+* Adicionado o processo de solicitação de pagamento com a criação do pedido via API REST do WooCommerce.
+* Adicionado nova funcionalidade: Expiração do QR Code.
+* Adicionado hooks para que outros desenvolvedores possam estendê-lo e modificá-lo.
+* Adicionado cabeçalho "Accept: application/json". Boa prática.
+
+### 1.1.8 - 10/06/2020 ###
 
 * Correção "As propriedades do pedido não devem ser acessadas diretamente."
 

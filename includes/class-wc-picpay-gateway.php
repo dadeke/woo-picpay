@@ -3,7 +3,7 @@
  * Gateway class
  *
  * @package Woo_PicPay/Classes/Gateway
- * @version 1.1.8
+ * @version 1.2.0
  */
 
 if(!defined('ABSPATH')) {

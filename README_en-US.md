@@ -4,7 +4,7 @@
 **Tags:** woocommerce, picpay, payment  
 **Requires at least:** 4.9  
 **Tested up to:** 5.4  
-**Stable tag:** 1.1.8  
+**Stable tag:** 1.2.0  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -75,7 +75,15 @@ The plugin has been configured to receive payments only from users who select Br
 
 ## Changelog ##
 
-## 1.1.8 - 2020/06/10 ##
+## 1.2.0 - 2020/07/13 ##
+
+* Fix for not request cancellation in the PicPay API if another payment method was used.
+* Add process the request payment with order create via WooCommerce REST API.
+* Add new functionality: QR Code expiration.
+* Add hooks so that other developers can extend and modify it.
+* Add header "Accept: application/json". Good practice.
+
+### 1.1.8 - 2020/06/10 ###
 
 * Fix "Order properties should not be accessed directly."
 
