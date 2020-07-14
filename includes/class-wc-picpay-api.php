@@ -136,7 +136,18 @@ class WC_PicPay_API {
 					'value' => $order->get_total(),
 					'buyer' => $buyer
 				);
-		
+
+		if($this->gateway->qrcode_expiration === 'yes') {
+			$manage_stock = WC_Admin_Settings::get_option('woocommerce_manage_stock', 'no');
+			$hs_minutes = WC_Admin_Settings::get_option('woocommerce_hold_stock_minutes', '');
+			if(($manage_stock === 'yes') && is_numeric($hs_minutes)) {
+				$ct_datetime = current_datetime();
+				$dt_interval = new DateInterval('PT' . $hs_minutes . 'M');
+				$expires_at = $ct_datetime->add($dt_interval); // Add minutes
+				$payment['expiresAt'] = $expires_at->format('c'); // Date format ISO 8601
+			}
+		}
+
 		return json_encode($payment);
 	}
 	
@@ -181,7 +192,10 @@ class WC_PicPay_API {
 
 			return array(
 				'url'   => $body['paymentUrl'],
-				'data'  => '',
+				'data'  => array(
+					'qrcode_base64' => $body['qrcode']['base64'],
+					'expires_at'    => $body['expiresAt']
+				),
 				'error' => ''
 			);
 		}

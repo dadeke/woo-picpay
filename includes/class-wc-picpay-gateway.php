@@ -36,6 +36,7 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$this->description       = $this->get_option('description');
 		$this->picpay_token      = $this->get_option('picpay_token');
 		$this->seller_token      = $this->get_option('seller_token');
+		$this->qrcode_expiration = $this->get_option('qrcode_expiration');
 		$this->invoice_prefix    = $this->get_option('invoice_prefix');
 		$this->debug             = $this->get_option('debug');
 
@@ -140,6 +141,13 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				'type'        => 'text',
 				'description' => __('Please enter your Seller token.', 'woo-picpay'),
 				'default'     => '',
+			),
+			'qrcode_expiration'    => array(
+				'title'       => __('QR Code expiration', 'woo-picpay'),
+				'type'        => 'checkbox',
+				'label'       => __('Enable QR Code expiration', 'woo-picpay'),
+				'default'     => 'no',
+				'description' => sprintf(__('QR Code expiration works only if the <a href="%s" target="_blank">WooCommerce Manage Stock</a> is enabled.<br />The expiration time is controlled in <a href="%s">WooCommerce > Settings > Products > Inventory > Hold Stock (minutes)</a>', 'woo-picpay'), esc_url('https://docs.woocommerce.com/document/configuring-woocommerce-settings/#inventory-options'), esc_url(admin_url('admin.php?page=wc-settings&tab=products&section=inventory'))),
 			),
 			'invoice_prefix'         => array(
 				'title'       => __('Invoice Prefix', 'woo-picpay'),
