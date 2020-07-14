@@ -201,6 +201,8 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		// Check if PicPay PaymentURL already exists. 
 		$response['url'] = $order->get_meta('PicPay_PaymentURL');
 		if(!$response['url']) {
+			do_action('woo_picpay_checkout_request_before', $order);
+
 			$response = $this->api->do_checkout_request($order);
 			
 			if($response['url']) {
@@ -210,6 +212,8 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 				}
 
 				$order->save();
+
+				do_action('woo_picpay_checkout_request_after', $response, $order);
 			}
 		}
 
@@ -300,6 +304,8 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 			}
 			
 			$this->update_order_status($payment);
+
+			do_action('woo_picpay_callback', $payment, $order);
 		}
 		exit;
 	}
@@ -407,10 +413,14 @@ class WC_PicPay_Gateway extends WC_Payment_Gateway {
 		$cancellation_id = $order->get_meta('PicPay_cancellationId');
 		
 		if(empty($cancellation_id)) { // Prevents repeat refunded.
+			do_action('woo_picpay_payment_cancel_before', $order);
+
 			$payment = $this->api->do_payment_cancel($order);
 				
 			if(is_array($payment)) {
 				$this->save_payment_meta_data($order, $payment);
+
+				do_action('woo_picpay_payment_cancel_after', $payment, $order);
 			}
 		}
 	}
