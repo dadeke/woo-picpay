@@ -12,7 +12,7 @@ Adicione o PicPay E-Commerce como método de pagamento em sua loja WooCommerce.
 
 ### _Gostou deste plugin? Considere fazer uma doação para ajudar a apoiar seu desenvolvimento. Muito obrigado!_
 
-[<p align="center">![Doe com PicPay!](https://i.imgur.com/4dRgTqp.png)</p>](https://picpay.me/deividsondamasio)
+[<p align="center">![Doe com Pix!](https://i.imgur.com/gS4NXEg.png)</p>](https://picpay.me/deividsondamasio)
 
 
 ## Descrição ##
